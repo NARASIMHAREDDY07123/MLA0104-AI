@@ -1,4 +1,4 @@
-1. Breadth First Search (BFS)
+**1. Breadth First Search (BFS)**
 Description
 
 Breadth First Search explores all neighboring nodes before moving to the next level. It guarantees the shortest path in an unweighted graph.
@@ -37,7 +37,7 @@ GPS Navigation
 Social Network Friend Suggestions
 Shortest Path in Unweighted Graphs
 Web Crawlers
-2. Depth First Search (DFS)
+**2. Depth First Search (DFS)**
 Description
 
 Depth First Search explores one branch completely before backtracking.
@@ -66,7 +66,7 @@ Maze Solving
 Topological Sorting
 Cycle Detection
 Puzzle Solving
-3. Uniform Cost Search (UCS)
+**3. Uniform Cost Search (UCS)**
 Description
 
 Uniform Cost Search expands the node with the lowest cumulative path cost.
@@ -98,7 +98,7 @@ Route Planning
 GPS Navigation
 Robotics
 Logistics
-4. Greedy Best First Search (GBFS)
+**4. Greedy Best First Search (GBFS)**
 Description
 
 GBFS selects the node having the smallest heuristic value.
@@ -130,7 +130,7 @@ Robot Navigation
 Video Game AI
 Path Finding
 Network Routing
-5. A* Search
+**5. A* Search**
 Description
 
 A* Search combines actual path cost and heuristic value.
@@ -169,8 +169,8 @@ Use Cases
 Google Maps
 GPS Systems
 Robot Navigation
-Game Development
-6. Min-Max Algorithm
+Game Development**
+6. Min-Max Algorithm**
 Description
 
 Min-Max is used in two-player games where one player tries to maximize the score while the other minimizes it.
@@ -201,7 +201,7 @@ Chess
 Tic Tac Toe
 Checkers
 Connect Four
-7. Alpha-Beta Pruning
+**7. Alpha-Beta Pruning**
 Description
 
 Alpha-Beta Pruning improves Min-Max by eliminating unnecessary branches.
@@ -243,7 +243,7 @@ Chess Engines
 Game AI
 Checkers
 Tic Tac Toe
-8. Water Jug Problem
+**8. Water Jug Problem**
 Description
 
 The Water Jug Problem is a classic state-space search problem used in Artificial Intelligence.
@@ -269,17 +269,4 @@ AI State Space Problems
 Puzzle Solving
 Robot Planning
 Constraint Satisfaction
-🛠 Technologies Used
-Python 3.x
-VS Code / PyCharm
-Git & GitHub
-📖 Algorithms Included
-Algorithm	Category
-BFS	Uninformed Search
-DFS	Uninformed Search
-Uniform Cost Search	Uninformed Search
-GBFS	Informed Search
-A* Search	Informed Search
-Min-Max	Game Playing
-Alpha-Beta Pruning	Game Playing
-Water Jug	State Space Search
+
