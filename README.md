@@ -1,9 +1,9 @@
 **1. Breadth First Search (BFS)**
-Description
 
 Breadth First Search explores all neighboring nodes before moving to the next level. It guarantees the shortest path in an unweighted graph.
 
-Pseudocode
+**Pseudocode**
+
 BFS(Graph, Start)
 
 Create an empty queue
@@ -26,7 +26,8 @@ While queue is not empty
             Enqueue(Neighbor)
 
 End
-Explanation
+
+**Explanation**
 Start from the source node.
 Add it to the queue.
 Visit every adjacent node.
@@ -37,12 +38,14 @@ GPS Navigation
 Social Network Friend Suggestions
 Shortest Path in Unweighted Graphs
 Web Crawlers
+
+
 **2. Depth First Search (DFS)**
 Description
 
 Depth First Search explores one branch completely before backtracking.
 
-Pseudocode
+**Pseudocode**
 DFS(Node)
 
 Mark Node as visited
@@ -56,22 +59,24 @@ For each Neighbor
         DFS(Neighbor)
 
 End
-Explanation
+**Explanation**
 Visit the starting node.
 Go as deep as possible.
 Backtrack when no child exists.
 Repeat until all nodes are visited.
-Use Cases
+
+Use Cases:
 Maze Solving
 Topological Sorting
 Cycle Detection
 Puzzle Solving
+
 **3. Uniform Cost Search (UCS)**
 Description
 
 Uniform Cost Search expands the node with the lowest cumulative path cost.
 
-Pseudocode
+**Pseudocode**
 Insert Start into Priority Queue
 
 While Queue is not empty
@@ -89,11 +94,13 @@ While Queue is not empty
     Insert into Queue
 
 End
-Explanation
+
+**Explanation**
 Uses a Priority Queue.
 Always expands the cheapest path.
 Guarantees optimal solution.
-Use Cases
+
+**Use Cases**
 Route Planning
 GPS Navigation
 Robotics
@@ -103,7 +110,7 @@ Description
 
 GBFS selects the node having the smallest heuristic value.
 
-Pseudocode
+**Pseudocode**
 Insert Start into Priority Queue
 
 While Queue not empty
@@ -119,23 +126,26 @@ While Queue not empty
     Insert neighbors using heuristic
 
 End
-Explanation
+
+**Explanation**
 Uses heuristic function h(n).
 Chooses the node closest to goal.
 Does not consider path cost.
 Formula
 f(n) = h(n)
-Use Cases
+
+**Use Cases**
 Robot Navigation
 Video Game AI
 Path Finding
 Network Routing
-**5. A* Search**
+
+****5. A* Search****
 Description
 
 A* Search combines actual path cost and heuristic value.
 
-Pseudocode
+**Pseudocode**
 Insert Start into Open List
 
 While Open List not empty
@@ -159,23 +169,26 @@ While Open List not empty
     Update Open List
 
 End
-Explanation
+
+**Explanation**
 Combines actual cost and estimated cost.
 Produces optimal path.
 Faster than Uniform Cost Search.
 Formula
 f(n)=g(n)+h(n)
-Use Cases
+
+**Use Cases**
 Google Maps
 GPS Systems
 Robot Navigation
 Game Development**
-6. Min-Max Algorithm**
+
+**6. Min-Max Algorithm****
 Description
 
 Min-Max is used in two-player games where one player tries to maximize the score while the other minimizes it.
 
-Pseudocode
+**Pseudocode**
 MINIMAX(Node, Depth, MaxPlayer)
 
 If Leaf Node
@@ -191,12 +204,14 @@ Else
     Return Minimum of Children
 
 End
-Explanation
+
+**Explanation**
 MAX chooses highest value.
 MIN chooses lowest value.
 Continues recursively.
 Returns optimal move.
-Use Cases
+
+**Use Cases**
 Chess
 Tic Tac Toe
 Checkers
@@ -226,7 +241,8 @@ If Beta <= Alpha
     Prune branch
 
 Return Best Value
-Explanation
+
+**Explanation**
 Uses Alpha and Beta values.
 Skips unnecessary branches.
 Produces same result as Min-Max with fewer computations.
@@ -238,17 +254,19 @@ Beta = Best value for MIN
 Prune when
 
 Beta <= Alpha
-Use Cases
+
+**Use Cases**
 Chess Engines
 Game AI
 Checkers
 Tic Tac Toe
+
 **8. Water Jug Problem**
 Description
 
 The Water Jug Problem is a classic state-space search problem used in Artificial Intelligence.
 
-Pseudocode
+**Pseudocode**
 Start
 
 Fill either jug
@@ -260,7 +278,8 @@ Pour water from one jug to another
 Repeat until target amount is reached
 
 Stop
-Explanation
+
+**Explanation**
 Represents every water level as a state.
 Uses state-space search.
 Goal is obtaining required quantity.
