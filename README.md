@@ -24,8 +24,7 @@ While queue is not empty
 
             Mark Neighbor as visited
             Enqueue(Neighbor)
-
-End
+            End
 
 **Explanation**
 Start from the source node.
@@ -65,7 +64,7 @@ Go as deep as possible.
 Backtrack when no child exists.
 Repeat until all nodes are visited.
 
-Use Cases:
+**Use Cases:**
 Maze Solving
 Topological Sorting
 Cycle Detection
@@ -216,6 +215,8 @@ Chess
 Tic Tac Toe
 Checkers
 Connect Four
+
+
 **7. Alpha-Beta Pruning**
 Description
 
@@ -261,6 +262,7 @@ Game AI
 Checkers
 Tic Tac Toe
 
+
 **8. Water Jug Problem**
 Description
 
@@ -278,6 +280,7 @@ Pour water from one jug to another
 Repeat until target amount is reached
 
 Stop
+
 
 **Explanation**
 Represents every water level as a state.
